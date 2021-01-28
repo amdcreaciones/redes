@@ -1,4 +1,9 @@
 window.onload = function() {
+	const body = document.querySelector('body')
+	const card = document.querySelector('.ct-card')
+	const preloader = document.querySelector('.ct-preloader')
+	const slider = document.querySelector('.slider')
+	const logo = document.querySelector('.logotype')
 	const title = document.querySelector('.ct-title')
 	const redes = document.querySelector('.title-r')
 	const sociales = document.querySelector('.title-s')
@@ -71,6 +76,24 @@ window.onload = function() {
 		dataWp.classList.toggle('black')
 		arrowWp.classList.toggle('rotate')
 	}
+
+	function charge() {
+		card.classList.toggle('hide')
+		body.classList.toggle('overflow')
+		logo.classList.toggle('hide')
+		slider.classList.toggle('hide')
+		preloader.classList.toggle('hide')
+		title.classList.toggle('ani-title')
+		instagram.classList.toggle('ani-instagram')
+		facebook.classList.toggle('ani-facebok')
+		whatsapp.classList.toggle('ani-whastapp')
+		arrowIg.classList.toggle('ani-arrow')
+		arrowFb.classList.toggle('ani-arrow')
+		arrowWp.classList.toggle('ani-arrow')
+	}
+	
+	setTimeout(charge, 2500)
+  
 
 
 }

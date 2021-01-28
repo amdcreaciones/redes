@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+       url('bebasneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
 	margin: 0;
@@ -26,7 +33,7 @@ div {
 .logotype {
 	width: 150px;
 	height: 106px;
-	background: url();
+	background: url(https://i.imgur.com/UCIiGHd.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -79,7 +86,11 @@ div {
 	left: 0;
 	animation: corner-tl 2s infinite;
 	transform: scale(1);
+	transition: 0.2s linear
+}
 
+.corner-tl:hover {
+	z-index: 1
 }
 
 .corner-br {
@@ -94,6 +105,7 @@ div {
 	right: 0;
 	animation: corner-br 2s infinite;
 	transform: scale(1);
+	transition: 0.2s linear
 }
 
 .corner-bl {
@@ -107,6 +119,11 @@ div {
   bottom: 0;
   left: 0;
   opacity: 0.5;
+  transition: 0.2s linear
+}
+
+.corner-bl:hover {
+	opacity: 0;
 }
 
 .ct-title {
@@ -120,9 +137,9 @@ div {
 }
 
 .title-r, .title-s {
-	font-family: 'Bebas';
-	font-size: 45px;
-	transition: 0.2s linear
+	font-family: 'bebas regular';
+  font-size: 45px;
+  transition: 0.2s linear;
 }
 
 .title-r {
@@ -181,9 +198,9 @@ div {
 }
 
 .text {
-	font-family: 'Bebas';
-	font-size: 40px;
-	color: #2d2d2d;
+	font-family: 'bebas regular';
+  font-size: 40px;
+  color: #2d2d2d;
 }
 
 .t-instagram, .t-facebook, .t-whatsapp {
@@ -206,7 +223,7 @@ div {
 }
 
 .data {
-	font-family: 'Bebas';
+	font-family: 'bebas regular';
 	font-size: 25px;
 	color: white;
 	transition: 0.1s linear;
