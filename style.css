@@ -88,7 +88,7 @@ div {
 	transition: 0.2s linear
 }
 
-.corner-tl:hover {
+.corner-tl:hover, .corner-br:hover {
 	z-index: 1
 }
 
@@ -257,6 +257,14 @@ div {
 
 .ct-instagram:hover, .ct-facebook:hover, .ct-whatsapp:hover {
 	transform: scale(1.1);
+}
+
+.ani-start {
+	animation: start 2.5s 1;
+}
+
+.ani-arrow {
+	animation: arrow 2.5s 1;
 }
 
 @media screen and (max-width: 500px) {

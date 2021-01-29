@@ -23,15 +23,15 @@ window.onload = function() {
   	}
   }
 
-  instagram.onclick = function() {
+  instagram.ondblclick = function() {
   	doubleclick(instagram, 'https://www.instagram.com/amd.creaciones/')
   } 
 
- 	facebook.onclick = function() {
+ 	facebook.ondblclick = function() {
   	doubleclick(facebook, 'https://www.facebook.com/amd.creaciones')
   } 
 
- 	whatsapp.onclick = function() {
+ 	whatsapp.ondblclick = function() {
   	doubleclick(whatsapp, 'https://api.whatsapp.com/send/?phone=5491163070429&text&app_absent=0')
   } 
 
@@ -83,10 +83,10 @@ window.onload = function() {
 		logo.classList.toggle('hide')
 		slider.classList.toggle('hide')
 		preloader.classList.toggle('hide')
-		title.classList.toggle('ani-title')
-		instagram.classList.toggle('ani-instagram')
-		facebook.classList.toggle('ani-facebok')
-		whatsapp.classList.toggle('ani-whastapp')
+		title.classList.toggle('ani-start')
+		instagram.classList.toggle('ani-start')
+		facebook.classList.toggle('ani-start')
+		whatsapp.classList.toggle('ani-start')
 		arrowIg.classList.toggle('ani-arrow')
 		arrowFb.classList.toggle('ani-arrow')
 		arrowWp.classList.toggle('ani-arrow')

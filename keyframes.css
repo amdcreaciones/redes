@@ -26,3 +26,7 @@
 	50% { height: 150px; width: 133px }
 	100% { height: 170px; width: 153px } 
 }
+
+@keyframes start { 50% { transform: scale(1.1); } }
+
+@keyframes arrow { 50% { transform: rotate(-90deg); } }
