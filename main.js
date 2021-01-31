@@ -16,11 +16,20 @@ window.onload = function() {
 	const arrowIg = document.querySelector('.a-instagram')
 	const arrowFb = document.querySelector('.a-facebook')
 	const arrowWp = document.querySelector('.a-whatsapp')
+	const alertCt = document.querySelector('.ct-alert')
+	const alertBtn = document.querySelector('.alert-button')
+	const alertBg = document.querySelector('.bg-alert')
 
 	function doubleclick (socialmedia, link) {
   	if (socialmedia.style = 'scale(1.1)') {
   		window.open(link)
   	}
+  }
+
+  alertBtn.onclick = function() {
+  	alertCt.classList.toggle('hide')
+  	alertBg.classList.toggle('hide')
+		body.classList.toggle('overflow')
   }
 
   instagram.ondblclick = function() {
@@ -79,7 +88,6 @@ window.onload = function() {
 
 	function charge() {
 		card.classList.toggle('hide')
-		body.classList.toggle('overflow')
 		logo.classList.toggle('hide')
 		slider.classList.toggle('hide')
 		preloader.classList.toggle('hide')
@@ -90,6 +98,8 @@ window.onload = function() {
 		arrowIg.classList.toggle('ani-arrow')
 		arrowFb.classList.toggle('ani-arrow')
 		arrowWp.classList.toggle('ani-arrow')
+		alertCt.classList.toggle('hide')
+  	alertBg.classList.toggle('hide')
 	}
 	
 	setTimeout(charge, 2500)
